@@ -1,1 +1,1 @@
-# goit-js-hw-06
+https://dagmarakida.github.io/goit-js-hw-06/
