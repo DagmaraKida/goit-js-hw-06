@@ -23,6 +23,8 @@ button {
   cursor: pointer;
 }
 
+/* TASK 03 */
+
 .gallery {
   display: flex;
   gap: 30px;
