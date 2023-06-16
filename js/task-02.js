@@ -8,11 +8,13 @@ Then will insert all <li> to the ul#ingredients list in a single operation.
 
 const ingredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Condiments"];
 
-const ingredientsList = document.querySelector("#ingredients");
-
-ingredients.forEach((ingredient) => {
-  const listItem = document.createElement("li");
-  listItem.textContent = ingredient;
-  listItem.classList.add("item");
-  ingredientsList.append(listItem);
+const list = document.querySelector("#ingredients");
+const listItems = [];
+ingredients.forEach((element) => {
+  const item = document.createElement("li");
+  item.textContent = element;
+  item.classList.add("item");
+  listItems.push(item);
 });
+
+list.append(...listItems);
